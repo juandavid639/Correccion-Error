@@ -1,4 +1,7 @@
-import React from 'react'
+import React, { useState}  from 'react';
+import Posteos from './components/Posteos';
+import Estatus from './components/Estatus';
+
 // El componente App es el padre de:
 // - Estatus
 // - Posteos
@@ -6,8 +9,8 @@ import React from 'react'
 // MÉTODOS: App debe tener un método para aumentar este número y que pueda ser ejecutado por su nieto Post.
 // PROPS: App deberá pasar por props lo necesario a sus componenetes internos para que manipulen o lean su estado.
 
-function App() {
-
+export function App() {
+  
   return (
     <div className="App">
       <Estatus />

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 // El componente Estatus no tiene componentes hijos.
 // ESTADO: Estatus no tiene estado.
@@ -8,11 +9,14 @@ import React from 'react'
 //    h1
 //    p > span     (el span mostrará la cantidad recibida por props)
 
-export default function Estatus() {
-  
+export default function Estatus(props) {
+ 
   return (
+    
     <header>
-        {/* maquetar Estatus aquí */}
+        <h1>Numero Total</h1>
+        
+        <p>Cantidad de Likes <span>{props.actualizarLikes} </span></p> 
     </header>
   )
 }
